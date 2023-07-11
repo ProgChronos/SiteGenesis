@@ -1,0 +1,130 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.ection{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  scroll-snap-align: center;
+}
+
+#indicador{
+ 
+  background-color: rgb(255, 220, 63);
+  height: 0.35rem;
+  width: 0;
+  position: fixed;
+  top:0;
+  
+}
+
+@media only screen and (max-width: 600px) {
+    /* Adicione aqui os estilos específicos para celular */
+
+    h2{
+        text-align: center;
+        margin-top: 15px;
+    }
+    p{
+        font-size: 80%;
+        overflow-y: scroll;
+    }
+
+    em{
+      padding: 15%;
+    }
+
+    section.cent{
+      align-items: center;
+    }
+
+    nav.men{
+      padding-bottom: 0rem !important;
+      padding-top: 0rem !important;
+    }
+
+    img.bat{
+      height: 100vh;
+    }
+  
+  }
+  
+  /* Estilos para a visualização em PC */
+  @media only screen and (min-width: 601px) {
+    /* Adicione aqui os estilos específicos para PC */
+ .sameheight2{
+  margin-top: 5%;
+ }
+ .bg-registration{
+  margin: 45px 0;
+ }
+ section.cent{
+  align-items: center;
+}
+nav.men{
+  padding-bottom: 0rem !important;
+  padding-top: 0rem !important;
+}
+
+img.bat{
+  width: 100%;
+}
+  }
+
+
+ h1.titulo{
+        font-family: 'Times New Roman', Times, serif;
+    background-image: linear-gradient(
+      to right,
+      #f1ba2e,
+      #ffd56b 50%,
+      #000 50%
+    );
+    background-size: 200% 100%;
+    background-position: -100%;
+    display: inline-block;
+    padding: 5px 0;
+    position: relative;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  h1.titulo:before{
+    content: '';
+    background: #f1ba2e;
+    display: block;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  h1.titulo:hover {
+   background-position: 0;
+  }
+  
+  h1.titulo:hover::before{
+    width: 100%;
+  }
+
+  .image-container {
+    position: relative;
+    display: inline-block;
+  }
+  
+
+  .sessao{
+    visibility: hidden;
+  }
+
+  #my-nav {
+    transition: border-radius 0.3s ease;
+  }
